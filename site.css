@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+body {
+  width: 70%;
+  margin: 0 auto;
+}
+p, div, section {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+h1 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+.content {
+  float: left;
+  width: 70%;
+}
+.editable {
+  color: red;
+}
+button {
+  float: left;
+  margin-left: 10%;
+  padding: 3px;
+  border-radius: 4px;
+  margin-top: 6px;
+}
