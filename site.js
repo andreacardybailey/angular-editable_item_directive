@@ -5,13 +5,10 @@ app.directive('makeEditable', function(){
     restrict: 'A',
     templateUrl: 'makeEditable.html',
     transclude: true,
-    link: function(scope, element, attrs) {
-      scope.isEditable = false;
-      scope.activate = function() {
-        scope.isEditable = true;
-      }
-      scope.deactivate = function() {
-        scope.isEditable = false;
+    controller: function($scope, $element, $attrs) {
+      $scope.isEditable = false;
+      $scope.toggleEditability = function() {
+        $scope.isEditable = !$scope.isEditable;
       }
     }
   };
